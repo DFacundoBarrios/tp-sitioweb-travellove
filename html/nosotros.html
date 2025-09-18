@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nosotros - Travel love</title>
+  <link rel="stylesheet" href="../css/estilos.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body>
+
+  <!-- BARRA DE NAVEGACION -->
+  <nav class="navbar navbar-expand-md navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white" href="index.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-airplane"
+          viewBox="0 0 16 16">
+          <path
+            d="M6.428 1.151C6.708.591 7.213 0 8 0s1.292.592 1.572 1.151C9.861 1.73 10 2.431 10 3v3.691l5.17 2.585a1.5 1.5 0 0 1 .83 1.342V12a.5.5 0 0 1-.582.493l-5.507-.918-.375 2.253 1.318 1.318A.5.5 0 0 1 10.5 16h-5a.5.5 0 0 1-.354-.854l1.319-1.318-.376-2.253-5.507.918A.5.5 0 0 1 0 12v-1.382a1.5 1.5 0 0 1 .83-1.342L6 6.691V3c0-.568.14-1.271.428-1.849m.894.448C7.111 2.02 7 2.569 7 3v4a.5.5 0 0 1-.276.447l-5.448 2.724a.5.5 0 0 0-.276.447v.792l5.418-.903a.5.5 0 0 1 .575.41l.5 3a.5.5 0 0 1-.14.437L6.708 15h2.586l-.647-.646a.5.5 0 0 1-.14-.436l.5-3a.5.5 0 0 1 .576-.411L15 11.41v-.792a.5.5 0 0 0-.276-.447L9.276 7.447A.5.5 0 0 1 9 7V3c0-.432-.11-.979-.322-1.401C8.458 1.159 8.213 1 8 1s-.458.158-.678.599" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-globe-americas"
+          viewBox="0 0 16 16">
+          <path
+            d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0M2.04 4.326c.325 1.329 2.532 2.54 3.717 3.19.48.263.793.434.743.484q-.121.12-.242.234c-.416.396-.787.749-.758 1.266.035.634.618.824 1.214 1.017.577.188 1.168.38 1.286.983.082.417-.075.988-.22 1.52-.215.782-.406 1.48.22 1.48 1.5-.5 3.798-3.186 4-5 .138-1.243-2-2-3.5-2.5-.478-.16-.755.081-.99.284-.172.15-.322.279-.51.216-.445-.148-2.5-2-1.5-2.5.78-.39.952-.171 1.227.182.078.099.163.208.273.318.609.304.662-.132.723-.633.039-.322.081-.671.277-.867.434-.434 1.265-.791 2.028-1.12.712-.306 1.365-.587 1.579-.88A7 7 0 1 1 2.04 4.327Z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+          class="bi bi-globe-europe-africa" viewBox="0 0 16 16">
+          <path
+            d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0M3.668 2.501l-.288.646a.847.847 0 0 0 1.479.815l.245-.368a.81.81 0 0 1 1.034-.275.81.81 0 0 0 .724 0l.261-.13a1 1 0 0 1 .775-.05l.984.34q.118.04.243.054c.784.093.855.377.694.801-.155.41-.616.617-1.035.487l-.01-.003C8.274 4.663 7.748 4.5 6 4.5 4.8 4.5 3.5 5.62 3.5 7c0 1.96.826 2.166 1.696 2.382.46.115.935.233 1.304.618.449.467.393 1.181.339 1.877C6.755 12.96 6.674 14 8.5 14c1.75 0 3-3.5 3-4.5 0-.262.208-.468.444-.7.396-.392.87-.86.556-1.8-.097-.291-.396-.568-.641-.756-.174-.133-.207-.396-.052-.551a.33.33 0 0 1 .42-.042l1.085.724c.11.072.255.058.348-.035.15-.15.415-.083.489.117.16.43.445 1.05.849 1.357L15 8A7 7 0 1 1 3.668 2.501" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+          class="bi bi-globe-asia-australia-fill" viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0m3.041 9a1 1 0 0 0-.946.674l-.172.499a1 1 0 0 1-.403.515l-.803.517a1 1 0 0 0-.458.84v.455a1 1 0 0 0 1 1h.257c.192 0 .38.055.542.16l.762.491a1 1 0 0 0 .282.123A7 7 0 0 0 14.82 9.57a1 1 0 0 0-.085-.061l-.315-.204a1 1 0 0 0-.977-.06l-.169.082a1 1 0 0 1-.742.051l-1.02-.33A1 1 0 0 0 11.205 9zm-5.832 2.655a.302.302 0 1 0-.298.52l.762.325.48.232A.386.386 0 1 0 6.321 12h-.417a.7.7 0 0 1-.418-.139zM8 1a7 7 0 0 0-6.387 9.864l.754-1.285a1 1 0 0 1 1.546-.225l1.074 1.005a.986.986 0 0 0 1.36-.011l.038-.037a.88.88 0 0 0 .26-.754c-.075-.549.37-1.035.92-1.1.728-.086 1.587-.324 1.728-.957.086-.386-.115-.83-.361-1.2-.208-.312 0-.8.374-.8.122 0 .24-.055.318-.15l.393-.474c.196-.237.49-.368.797-.403.554-.065 1.407-.277 1.582-.973.185-.731-.986-.944-.998-1.62A7 7 0 0 0 8 1m.524 8.963a.413.413 0 1 0-.783-.183v.028a.46.46 0 0 1-.137.326l-.113.107a.36.36 0 0 0 .5.518l.193-.187a.6.6 0 0 0 .12-.166zm3.374-4.444c-.252-.244-.681-.139-.931.107-.256.251-.578.406-.918.585-.338.177-.264.625.101.735a.48.48 0 0 0 .345-.027l1.278-.617a.484.484 0 0 0 .125-.783" />
+        </svg>
+        <h3>TRAVEL LOVE</h3>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active text-white" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="paquetes.html">Paquetes</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="nosotros.html">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="galeria.html">Galería</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HEADER SECTION -->
+  <header class="about-header text-white text-center py-5" data-aos="fade-up">
+    <div class="container">
+      <h1 class="display-4 fw-bold">Nuestra Historia de Viajes</h1>
+      <p class="lead">Creando experiencias únicas desde 2010</p>
+    </div>
+  </header>
+
+  <!-- QUIENES SOMOS SECTION -->
+  <section class="py-5" data-aos="fade-up">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6" data-aos="fade-right">
+          <h2 class="section-title">¿Quiénes somos?</h2>
+          <p class="lead mb-4">Somos TRAVEL LOVE, una agencia de viajes con más de 10 años de experiencia en crear aventuras inolvidables alrededor del mundo.</p>
+          <div class="row g-4 mb-4">
+            <div class="col-md-6">
+              <div class="d-flex align-items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-check-circle-fill text-primary me-2" viewBox="0 0 16 16">
+                  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                </svg>
+                <span>Expertos en viajes</span>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="d-flex align-items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-check-circle-fill text-primary me-2" viewBox="0 0 16 16">
+                  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                </svg>
+                <span>Atención personalizada</span>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="d-flex align-items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-check-circle-fill text-primary me-2" viewBox="0 0 16 16">
+                  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                </svg>
+                <span>Destinos exclusivos</span>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="d-flex align-items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-check-circle-fill text-primary me-2" viewBox="0 0 16 16">
+                  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                </svg>
+                <span>Soporte 24/7</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6" data-aos="fade-left">
+          <img src="../assets/turismo.jpg" alt="Nuestro equipo" class="img-fluid rounded-3 shadow-lg">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MISION Y VISION SECTION -->
+  <section class="bg-light py-5" data-aos="fade-up">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-6" data-aos="fade-right">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body p-4">
+              <div class="d-flex align-items-center mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-bullseye text-primary" viewBox="0 0 16 16">
+                  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                  <path d="M8 13A5 5 0 1 1 8 3a5 5 0 0 1 0 10m0 1A6 6 0 1 0 8 2a6 6 0 0 0 0 12"/>
+                  <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8"/>
+                  <path d="M9.5 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
+                </svg>
+                <h3 class="ms-3 mb-0">Nuestra Misión</h3>
+              </div>
+              <p class="card-text">Brindar experiencias de viaje personalizadas y únicas para cada persona, ayudándola a descubrir nuevos horizontes y a crear recuerdos para toda la vida.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6" data-aos="fade-left">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body p-4">
+              <div class="d-flex align-items-center mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-eye text-primary" viewBox="0 0 16 16">
+                  <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z"/>
+                  <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0"/>
+                </svg>
+                <h3 class="ms-3 mb-0">Nuestra Visión</h3>
+              </div>
+              <p class="card-text">Ser la agencia de viajes líder en innovación y satisfacción del cliente, reconocida por crear experiencias transformadoras y memorables en cada rincón del mundo.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HISTORIA TIMELINE SECTION -->
+  <section class="py-5" data-aos="fade-up">
+    <div class="container">
+      <h2 class="section-title text-center">Nuestra Historia</h2>
+      <div class="timeline">
+        <div class="timeline-item" data-aos="fade-right">
+          <div class="timeline-content">
+            <h4>2010</h4>
+            <p>Fundación de TRAVEL LOVE por un grupo de apasionados viajeros con el sueño de compartir experiencias únicas.</p>
+          </div>
+        </div>
+        <div class="timeline-item" data-aos="fade-left">
+          <div class="timeline-content">
+            <h4>2015</h4>
+            <p>Expansión de servicios y apertura de nuevas rutas. Alcanzamos más de 1000 clientes satisfechos.</p>
+          </div>
+        </div>
+        <div class="timeline-item" data-aos="fade-right">
+          <div class="timeline-content">
+            <h4>2018</h4>
+            <p>Implementación de tecnología de punta y personalización de experiencias. Premio a la mejor agencia emergente.</p>
+          </div>
+        </div>
+        <div class="timeline-item" data-aos="fade-left">
+          <div class="timeline-content">
+            <h4>2023</h4>
+            <p>Consolidación como referente en el mercado de viajes personalizados con presencia internacional.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EQUIPO SECTION -->
+  <section class="bg-light py-5" data-aos="fade-up">
+    <div class="container">
+      <h2 class="section-title text-center">Nuestro Equipo</h2>
+      <div class="row g-4">
+        <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
+          <div class="card border-0 text-center">
+            <div class="card-body">
+              <div class="rounded-circle overflow-hidden mb-3 mx-auto" style="width: 150px; height: 150px;">
+                <img src="../assets/team1.jpg" alt="CEO" class="img-fluid">
+              </div>
+              <h5 class="card-title">María González</h5>
+              <p class="card-text text-muted">CEO & Fundadora</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3" data-aos="fade-up" data-aos-delay="200">
+          <div class="card border-0 text-center">
+            <div class="card-body">
+              <div class="rounded-circle overflow-hidden mb-3 mx-auto" style="width: 150px; height: 150px;">
+                <img src="../assets/team2.jpg" alt="Director de Operaciones" class="img-fluid">
+              </div>
+              <h5 class="card-title">Carlos Rodríguez</h5>
+              <p class="card-text text-muted">Director de Operaciones</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
+          <div class="card border-0 text-center">
+            <div class="card-body">
+              <div class="rounded-circle overflow-hidden mb-3 mx-auto" style="width: 150px; height: 150px;">
+                <img src="../assets/team3.jpg" alt="Directora de Marketing" class="img-fluid">
+              </div>
+              <h5 class="card-title">Ana Martínez</h5>
+              <p class="card-text text-muted">Directora de Marketing</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3" data-aos="fade-up" data-aos-delay="400">
+          <div class="card border-0 text-center">
+            <div class="card-body">
+              <div class="rounded-circle overflow-hidden mb-3 mx-auto" style="width: 150px; height: 150px;">
+                <img src="../assets/team4.jpg" alt="Director de Experiencia" class="img-fluid">
+              </div>
+              <h5 class="card-title">Luis Pérez</h5>
+              <p class="card-text text-muted">Director de Experiencia</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--FOOTER REDES-->
+  <footer class="text-white py-4 mt-5" data-aos="fade-up">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="mb-4" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="h4 mb-4">TRAVEL LOVE</h3>
+            <p class="mb-4">Descubre el mundo con nosotros. Hacemos que cada viaje sea una experiencia inolvidable.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="mb-4" data-aos="fade-up" data-aos-delay="200">
+            <h4 class="h5 mb-4">Contacto</h4>
+            <p><i class="fas fa-phone me-2"></i> +54 3492 339430</p>
+            <p><i class="fas fa-envelope me-2"></i> info@travellove.com</p>
+            <p><i class="fas fa-map-marker-alt me-2"></i> Domingo Silva 469, Rafaela, Santa Fe</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12 text-center text-lg-start">
+          <div data-aos="fade-up" data-aos-delay="300">
+            <h4 class="h5 mb-4">Seguinos en nuestras redes</h4>
+            <div class="social-links">
+              <a href="https://www.facebook.com/tu_pagina_de_facebook" target="_blank" class="me-3">
+                <i class="fab fa-facebook-f fa-2x"></i>
+              </a>
+              <a href="https://instagram.com" target="_blank" class="me-3">
+                <i class="fab fa-instagram fa-2x"></i>
+              </a>
+              <a href="https://x.com/home?lang=es" target="_blank">
+                <i class="fab fa-twitter fa-2x"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-4 pt-3 border-top border-secondary" data-aos="fade-up" data-aos-delay="400">
+        <p class="mb-0">&copy; 2025 Travel Love. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/script.js"></script>
+</body>
+
+</html>

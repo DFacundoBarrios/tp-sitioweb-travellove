@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inicio - Agencia de Viajes</title>
+  <link rel="stylesheet" href="../css/estilos.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body>
+
+  <!-- BARRA DE NAVEGACION -->
+  <nav class="navbar navbar-expand-md navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white" href="index.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-airplane"
+          viewBox="0 0 16 16">
+          <path
+            d="M6.428 1.151C6.708.591 7.213 0 8 0s1.292.592 1.572 1.151C9.861 1.73 10 2.431 10 3v3.691l5.17 2.585a1.5 1.5 0 0 1 .83 1.342V12a.5.5 0 0 1-.582.493l-5.507-.918-.375 2.253 1.318 1.318A.5.5 0 0 1 10.5 16h-5a.5.5 0 0 1-.354-.854l1.319-1.318-.376-2.253-5.507.918A.5.5 0 0 1 0 12v-1.382a1.5 1.5 0 0 1 .83-1.342L6 6.691V3c0-.568.14-1.271.428-1.849m.894.448C7.111 2.02 7 2.569 7 3v4a.5.5 0 0 1-.276.447l-5.448 2.724a.5.5 0 0 0-.276.447v.792l5.418-.903a.5.5 0 0 1 .575.41l.5 3a.5.5 0 0 1-.14.437L6.708 15h2.586l-.647-.646a.5.5 0 0 1-.14-.436l.5-3a.5.5 0 0 1 .576-.411L15 11.41v-.792a.5.5 0 0 0-.276-.447L9.276 7.447A.5.5 0 0 1 9 7V3c0-.432-.11-.979-.322-1.401C8.458 1.159 8.213 1 8 1s-.458.158-.678.599" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-globe-americas"
+          viewBox="0 0 16 16">
+          <path
+            d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0M2.04 4.326c.325 1.329 2.532 2.54 3.717 3.19.48.263.793.434.743.484q-.121.12-.242.234c-.416.396-.787.749-.758 1.266.035.634.618.824 1.214 1.017.577.188 1.168.38 1.286.983.082.417-.075.988-.22 1.52-.215.782-.406 1.48.22 1.48 1.5-.5 3.798-3.186 4-5 .138-1.243-2-2-3.5-2.5-.478-.16-.755.081-.99.284-.172.15-.322.279-.51.216-.445-.148-2.5-2-1.5-2.5.78-.39.952-.171 1.227.182.078.099.163.208.273.318.609.304.662-.132.723-.633.039-.322.081-.671.277-.867.434-.434 1.265-.791 2.028-1.12.712-.306 1.365-.587 1.579-.88A7 7 0 1 1 2.04 4.327Z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+          class="bi bi-globe-europe-africa" viewBox="0 0 16 16">
+          <path
+            d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0M3.668 2.501l-.288.646a.847.847 0 0 0 1.479.815l.245-.368a.81.81 0 0 1 1.034-.275.81.81 0 0 0 .724 0l.261-.13a1 1 0 0 1 .775-.05l.984.34q.118.04.243.054c.784.093.855.377.694.801-.155.41-.616.617-1.035.487l-.01-.003C8.274 4.663 7.748 4.5 6 4.5 4.8 4.5 3.5 5.62 3.5 7c0 1.96.826 2.166 1.696 2.382.46.115.935.233 1.304.618.449.467.393 1.181.339 1.877C6.755 12.96 6.674 14 8.5 14c1.75 0 3-3.5 3-4.5 0-.262.208-.468.444-.7.396-.392.87-.86.556-1.8-.097-.291-.396-.568-.641-.756-.174-.133-.207-.396-.052-.551a.33.33 0 0 1 .42-.042l1.085.724c.11.072.255.058.348-.035.15-.15.415-.083.489.117.16.43.445 1.05.849 1.357L15 8A7 7 0 1 1 3.668 2.501" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+          class="bi bi-globe-asia-australia-fill" viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0m3.041 9a1 1 0 0 0-.946.674l-.172.499a1 1 0 0 1-.403.515l-.803.517a1 1 0 0 0-.458.84v.455a1 1 0 0 0 1 1h.257c.192 0 .38.055.542.16l.762.491a1 1 0 0 0 .282.123A7 7 0 0 0 14.82 9.57a1 1 0 0 0-.085-.061l-.315-.204a1 1 0 0 0-.977-.06l-.169.082a1 1 0 0 1-.742.051l-1.02-.33A1 1 0 0 0 11.205 9zm-5.832 2.655a.302.302 0 1 0-.298.52l.762.325.48.232A.386.386 0 1 0 6.321 12h-.417a.7.7 0 0 1-.418-.139zM8 1a7 7 0 0 0-6.387 9.864l.754-1.285a1 1 0 0 1 1.546-.225l1.074 1.005a.986.986 0 0 0 1.36-.011l.038-.037a.88.88 0 0 0 .26-.754c-.075-.549.37-1.035.92-1.1.728-.086 1.587-.324 1.728-.957.086-.386-.115-.83-.361-1.2-.208-.312 0-.8.374-.8.122 0 .24-.055.318-.15l.393-.474c.196-.237.49-.368.797-.403.554-.065 1.407-.277 1.582-.973.185-.731-.986-.944-.998-1.62A7 7 0 0 0 8 1m.524 8.963a.413.413 0 1 0-.783-.183v.028a.46.46 0 0 1-.137.326l-.113.107a.36.36 0 0 0 .5.518l.193-.187a.6.6 0 0 0 .12-.166zm3.374-4.444c-.252-.244-.681-.139-.931.107-.256.251-.578.406-.918.585-.338.177-.264.625.101.735a.48.48 0 0 0 .345-.027l1.278-.617a.484.484 0 0 0 .125-.783" />
+        </svg>
+        <h3>TRAVEL LOVE</h3>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active text-white" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="paquetes.html">Paquetes</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="nosotros.html">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="galeria.html">Galería</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- HEADER -->
+  <header class="text-white text-center py-5">
+    <div class="container h-100 d-flex align-items-center justify-content-center">
+      <div class="bg-dark bg-opacity-50 p-4 rounded">
+        <h1 class="display-4">Explorá el lugar de tus sueños</h1>
+        <p class="lead">Tu próximo viaje es con nosotros</p>
+        <a href="paquetes.html" class="btn btn-primary mt-3">Ver paquetes</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- SECTION DESTINOS -->
+  <section class="container" data-aos="fade-up" data-aos-duration="1000">
+    <div class="text-center">
+      <h2>Destinos más elegidos por los clientes</h2>
+    </div>
+    <div class="row">
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="card shadow-sm position-relative rounded-3 overflow-hidden destino-card">
+          <img src="../assets/paris.jpg" class="card-img" alt="París">
+          <div class="card-img-overlay d-flex flex-column justify-content-end p-3">
+            <div class="overlay-bg p-3 rounded">
+              <h5 class="card-title text-white">París</h5>
+              <p class="card-text text-white">La ciudad del amor te espera con sus luces, arte y gastronomía.</p>
+              <a href="paquetes.html" class="btn btn-outline-light btn-sm">Ver más</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card shadow-sm position-relative rounded-3 overflow-hidden destino-card">
+          <img src="../assets/riodejaneiiro.jpeg" class="card-img" alt="Río de Janeiro">
+          <div class="card-img-overlay d-flex flex-column justify-content-end p-3">
+            <div class="overlay-bg p-3 rounded">
+              <h5 class="card-title text-white">Río de Janeiro</h5>
+              <p class="card-text text-white">Playas, samba y el Cristo Redentor: viví la alegría carioca.</p>
+              <a href="paquetes.html" class="btn btn-outline-light btn-sm">Ver más</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="card shadow-sm position-relative rounded-3 overflow-hidden destino-card">
+          <img src="../assets/romaa.webp" class="card-img" alt="Roma">
+          <div class="card-img-overlay d-flex flex-column justify-content-end p-3">
+            <div class="overlay-bg p-3 rounded">
+              <h5 class="card-title text-white">Roma</h5>
+              <p class="card-text text-white">Historia milenaria y comida increíble te esperan en Italia.</p>
+              <a href="paquetes.html" class="btn btn-outline-light btn-sm">Ver más</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--SECTION BENEFICIOS-->
+  <section class="bg-light" data-aos="fade-up">
+    <div class="container">
+      <div class="text-center">
+        <h2>¿Por qué elegirnos?</h2>
+      </div>
+      <div class="row text-center">
+        <div class="col-md-4 why-us-item" data-aos="fade-up" data-aos-delay="100">
+          <div class="p-4 rounded-3 shadow-sm bg-white h-100">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+              class="bi bi-coin why-us-icon" viewBox="0 0 16 16">
+              <path
+                d="M5.5 9.511c.076.954.83 1.697 2.182 1.785V12h.6v-.709c1.4-.098 2.218-.846 2.218-1.932 0-.987-.626-1.496-1.745-1.76l-.473-.112V5.57c.6.068.982.396 1.074.85h1.052c-.076-.919-.864-1.638-2.126-1.716V4h-.6v.719c-1.195.117-2.01.836-2.01 1.853 0 .9.606 1.472 1.613 1.707l.397.098v2.034c-.615-.093-1.022-.43-1.114-.9zm2.177-2.166c-.59-.137-.91-.416-.91-.836 0-.47.345-.822.915-.925v1.76h-.005zm.692 1.193c.717.166 1.048.435 1.048.91 0 .542-.412.914-1.135.982V8.518z" />
+              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+              <path d="M8 13.5a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11m0 .5A6 6 0 1 0 8 2a6 6 0 0 0 0 12" />
+            </svg>
+            <h5 class="mt-4 mb-3">Buenos precios</h5>
+            <p class="text-muted">Ofrecemos precios competitivos y métodos de pago accesibles para todos. Financiación
+              en cuotas sin interés y descuentos especiales.</p>
+          </div>
+        </div>
+        <div class="col-md-4 why-us-item" data-aos="fade-up" data-aos-delay="200">
+          <div class="p-4 rounded-3 shadow-sm bg-white h-100">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+              class="bi bi-stars why-us-icon" viewBox="0 0 16 16">
+              <path
+                d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z" />
+            </svg>
+            <h5 class="mt-4 mb-3">Experiencia</h5>
+            <p class="text-muted">Más de 10 años creando experiencias únicas. Miles de viajeros satisfechos nos avalan.
+              Conocemos cada destino en profundidad.</p>
+          </div>
+        </div>
+        <div class="col-md-4 why-us-item" data-aos="fade-up" data-aos-delay="300">
+          <div class="p-4 rounded-3 shadow-sm bg-white h-100">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+              class="bi bi-shield-fill-check why-us-icon" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.8 11.8 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7 7 0 0 0 1.048-.625 11.8 11.8 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.54 1.54 0 0 0-1.044-1.263 63 63 0 0 0-2.887-.87C9.843.266 8.69 0 8 0m2.146 5.146a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793z" />
+            </svg>
+            <h5 class="mt-4 mb-3">Soporte personalizado</h5>
+            <p class="text-muted">Atención 24/7 antes, durante y después de tu viaje. Equipo multilingüe y experto para
+              asistirte en cualquier momento.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--SECTION TESTIMONIOS-->
+  <section class="testimonial-section" data-aos="fade-up">
+    <div class="container">
+      <div class="text-center">
+        <h2>Opiniones de nuestros clientes</h2>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <blockquote class="blockquote">
+            <p>"Un viaje inolvidable a Europa. La planificación fue perfecta, los hoteles excelentes y las excursiones
+              superaron nuestras expectativas. ¡Gracias por hacer realidad nuestro sueño!"</p>
+
+            <cite>Mariana López</cite>
+            <div class="text-warning mt-2">
+              ★★★★★
+            </div>
+
+          </blockquote>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <blockquote class="blockquote">
+            <p>"Excelente atención y organización impecable. El equipo estuvo pendiente de cada detalle. Los guías
+              locales fueron muy profesionales. ¡Recomiendo 100%!"</p>
+
+            <cite>Lucas Fernández</cite>
+            <div class="text-warning mt-2">
+              ★★★★★
+            </div>
+
+          </blockquote>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+          <blockquote class="blockquote">
+            <p>"Mi viaje a Asia fue una experiencia única. La agencia se encargó de todo y pude disfrutar sin
+              preocupaciones. El soporte 24/7 me dio mucha tranquilidad."</p>
+
+            <cite>Carolina Martínez</cite>
+            <div class="text-warning mt-2">
+              ★★★★★
+            </div>
+
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--SECTION CTA-->
+  <section class="cta-section text-white text-center" data-aos="fade-up">
+    <div class="container">
+      <h2>¿Listo para tu próximo viaje?</h2>
+      <p class="lead mb-4">Dejanos ayudarte a crear la experiencia perfecta</p>
+      <a href="contacto.html" class="btn btn-light btn-lg">Solicitar cotización</a>
+    </div>
+  </section>
+
+  <!--FOOTER REDES-->
+  <footer class="text-white py-4 mt-5" data-aos="fade-up">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="mb-4" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="h4 mb-4">TRAVEL LOVE</h3>
+            <p class="mb-4">Descubre el mundo con nosotros. Hacemos que cada viaje sea una experiencia inolvidable.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="mb-4" data-aos="fade-up" data-aos-delay="200">
+            <h4 class="h5 mb-4">Contacto</h4>
+            <p><i class="fas fa-phone me-2"></i> +54 3492 339430</p>
+            <p><i class="fas fa-envelope me-2"></i> info@travellove.com</p>
+            <p><i class="fas fa-map-marker-alt me-2"></i> Domingo Silva 469, Rafaela, Santa Fe</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12 text-center text-lg-start">
+          <div data-aos="fade-up" data-aos-delay="300">
+            <h4 class="h5 mb-4">Seguinos en nuestras redes</h4>
+            <div class="social-links">
+              <a href="https://www.facebook.com/tu_pagina_de_facebook" target="_blank" class="me-3">
+                <i class="fab fa-facebook-f fa-2x"></i>
+              </a>
+              <a href="https://instagram.com" target="_blank" class="me-3">
+                <i class="fab fa-instagram fa-2x"></i>
+              </a>
+              <a href="https://x.com/home?lang=es" target="_blank">
+                <i class="fab fa-twitter fa-2x"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-4 pt-3 border-top border-secondary" data-aos="fade-up" data-aos-delay="400">
+        <p class="mb-0">&copy; 2025 Travel Love. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/script.js"></script>
+</body>
+
+</html>

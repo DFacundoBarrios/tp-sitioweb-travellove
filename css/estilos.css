@@ -1,0 +1,622 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.section-title {
+  position: relative;
+  margin-bottom: 3rem;
+  padding-bottom: 1rem;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background: linear-gradient(90deg, #0a242f, #1a3a4a);
+}
+
+footer {
+  background: linear-gradient(135deg, #0a242f 0%, #1a3a4a 100%);
+  padding: 2rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+}
+
+footer p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: rgba(255,255,255,0.9);
+}
+
+footer a {
+  margin: 0 15px;
+  display: inline-block;
+  transition: all 0.3s ease;
+  color: rgba(255,255,255,0.8) !important;
+}
+
+footer a:hover {
+  color: #fff !important;
+  transform: translateY(-5px);
+}
+
+footer svg {
+  transition: all 0.3s ease;
+}
+
+footer a:hover svg {
+  filter: drop-shadow(0 0 8px rgba(255,255,255,0.6));
+}
+
+nav {
+  background: linear-gradient(135deg, rgb(10, 36, 47) 0%, rgb(35, 66, 83) 100%);
+  padding: 1rem 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.navbar-brand h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  background: linear-gradient(45deg, #fff, #e0e0e0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nav-link {
+  position: relative;
+  padding: 0.5rem 1rem !important;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 80%;
+}
+
+header {
+  background: url('../assets/turismo.jpg') no-repeat center center;
+  background-size: cover;
+  background-position: center;
+  height: calc(100vh - 56px); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 100%);
+  z-index: 1;
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  animation: fadeInDown 1s ease-out;
+}
+
+header p {
+  font-size: 1.8rem;
+  margin: 1.5rem 0;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+  animation: fadeInUp 1s ease-out 0.5s;
+  animation-fill-mode: both;
+}
+
+header .btn {
+  padding: 1rem 2.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 50px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+  animation: fadeInUp 1s ease-out 1s;
+  animation-fill-mode: both;
+}
+
+header .btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+/* Estilos para la sección de testimonios */
+.testimonial-section {
+  padding: 80px 0;
+  background-color: #f8f9fa;
+}
+
+.testimonial-section .section-title {
+  margin-bottom: 3rem;
+}
+
+.blockquote {
+  background: white;
+  border-radius: 10px;
+  padding: 2rem;
+  margin: 20px 0;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blockquote:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.blockquote p {
+  font-size: 1.1rem;
+  color: #2c3e50;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.blockquote-footer {
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+.blockquote-footer cite {
+  font-weight: 600;
+  color: #343a40;
+}
+
+.text-warning {
+  color: #ffc107 !important;
+}
+
+/* Estilos para el carrusel */
+#destinos-carousel {
+  margin-bottom: 3rem;
+  position: relative;
+  overflow: hidden;
+}
+
+#destinos-carousel .carousel-item {
+  height: 70vh;
+  min-height: 500px;
+  background: no-repeat center center scroll;
+  background-size: cover;
+  position: relative;
+}
+
+#destinos-carousel .carousel-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.6) 100%);
+  z-index: 1;
+}
+
+#destinos-carousel .carousel-item img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  filter: brightness(0.9);
+  transition: transform 8s ease;
+}
+
+#destinos-carousel .carousel-item.active img {
+  transform: scale(1.1);
+}
+
+#destinos-carousel .carousel-caption {
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  padding: 2.5rem;
+  border-radius: 15px;
+  max-width: 700px;
+  margin: 0 auto;
+  z-index: 2;
+  bottom: 20%;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#destinos-carousel .carousel-caption h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#destinos-carousel .carousel-caption p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+#destinos-carousel .carousel-control-prev,
+#destinos-carousel .carousel-control-next {
+  width: 5%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+#destinos-carousel:hover .carousel-control-prev,
+#destinos-carousel:hover .carousel-control-next {
+  opacity: 0.8;
+}
+
+#destinos-carousel .carousel-indicators {
+  bottom: 30px;
+}
+
+#destinos-carousel .carousel-indicators button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin: 0 6px;
+  background-color: #fff;
+  opacity: 0.5;
+  transition: all 0.3s ease;
+}
+
+#destinos-carousel .carousel-indicators button.active {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+/* Estilos para los filtros */
+.input-group {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.input-group .form-control,
+.input-group .form-select {
+  border: none;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.input-group .form-control:focus,
+.input-group .form-select:focus {
+  box-shadow: none;
+  background-color: #f8f9fa;
+}
+
+.input-group .form-range {
+  padding: 0 1rem;
+  height: 38px;
+}
+
+.input-group-text {
+  background-color: #fff;
+  border: none;
+  padding: 0.75rem 1rem;
+  color: #6c757d;
+}
+
+#filtro-region {
+  cursor: pointer;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 16px 12px;
+}
+
+/* Estilos para las tarjetas de destinos */
+.destino-card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.destino-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+}
+
+.destino-card .card-img-overlay {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 40%);
+  transition: background 0.3s ease;
+  padding: 0;
+}
+
+.destino-card:hover .card-img-overlay {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 50%);
+}
+
+.destino-card .overlay-bg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(2px);
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.destino-card:hover .overlay-bg {
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(3px);
+}
+
+.destino-card .card-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.destino-card .card-text {
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.6;
+  font-size: 1.1rem;
+  margin-bottom: 1.2rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.destino-card .precio {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin: 1rem 0;
+}
+
+.destino-card .precio small {
+  font-size: 1rem;
+  color: #6c757d;
+  font-weight: normal;
+}
+
+.card-header-custom {
+  overflow: hidden;
+  border-radius: 15px 15px 0 0;
+}
+
+.paquete-imagen {
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
+  transition: transform 0.5s ease;
+}
+
+.destino-card:hover .paquete-imagen {
+  transform: scale(1.1);
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.rating {
+  color: #ffc107;
+  font-size: 1.2rem;
+}
+
+/* Estilos para el modal de reserva */
+.modal-content {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.modal-header {
+  background-color: #f8f9fa;
+  border-bottom: none;
+}
+
+.modal-footer {
+  border-top: none;
+  padding: 1.5rem;
+}
+
+/* Estilos para los botones */
+.btn-reservar {
+  transition: all 0.3s ease;
+}
+
+.btn-reservar:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para feedback y validación */
+.feedback-container {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.valid-feedback,
+.invalid-feedback {
+  display: block;
+  margin-top: 0.5rem;
+}
+
+/* Animaciones personalizadas */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.slide-in-right {
+  animation: slideInRight 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.zoom-in {
+  animation: zoomIn 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Estilos para el contenedor principal */
+.container {
+  padding: 2rem 1rem;
+}
+
+/* Estilos para títulos de sección */
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 2rem;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background: linear-gradient(90deg, #0a242f, #23425380);
+  border-radius: 3px;
+}
+
+/* Estilos para el indicador de progreso */
+.progress {
+  background-color: #e9ecef;
+  border-radius: 0.25rem;
+  overflow: hidden;
+}
+
+.progress-bar {
+  transition: width 0.3s ease;
+}
+
+#galeria-viajes {
+  text-align: center;
+}
+
+.contacto-formulario {
+  text-align: center;
+}
+
+#paq-turisticos {
+  text-align: center;
+}
